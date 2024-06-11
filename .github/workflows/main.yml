@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: frontend-build
-          path: todo-frontend/dist/ # Updated path to match the expected directory
+          path: backend/src/main/resources/static/ 
 
   build-backend:
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: frontend-build
-          path: backend/src/main/resources/static/ # Ensure this matches your backend structure
+          path: backend/src/main/resources/static/ 
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app.jar
-          path: backend/target/app.jar # Ensure this path matches the output of your Maven build
+          path: backend/target/app.jar 
 
   push-to-docker-hub:
     runs-on: ubuntu-latest
