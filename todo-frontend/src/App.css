@@ -34,3 +34,7 @@ li span {
 li button {
   padding: 4px 8px;
 }
+
+body {
+  background-color: grey;
+}
