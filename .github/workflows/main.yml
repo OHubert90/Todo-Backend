@@ -55,8 +55,8 @@ jobs:
       - name: Upload backend build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app.jar
-          path: backend/target/app.jar # Ensure this path matches the output of your Maven build
+          name: todo-backend-0.0.1-SNAPSHOT.jar
+          path: target/todo-backend-0.0.1-SNAPSHOT.jar
 
   push-to-docker-hub:
     runs-on: ubuntu-latest
@@ -68,8 +68,8 @@ jobs:
       - name: Download backend build artifact
         uses: actions/download-artifact@v4
         with:
-          name: app.jar
-          path: backend/target
+          name: todo-backend-0.0.1-SNAPSHOT.jar
+          path: target
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
