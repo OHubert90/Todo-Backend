@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.github.R1d3r90</groupId>
-    <artifactId>Todo-Backend</artifactId>
+    <artifactId>todo-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Todo-Backend</name>
     <description>Todo-Backend</description>
